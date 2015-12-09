@@ -1,0 +1,13 @@
+{
+  "name": "express-snippets",
+  "version": "0.0.1",
+  "main": "./lib/express-snippets.coffee",
+  "description": "quick snippets for expressjs",
+  "repository": "https://github.com/gregdaynes/express-snippets",
+  "readmeFilename": "README.md",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0"
+  },
+  "dependencies": {}
+}

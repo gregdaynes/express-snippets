@@ -1,0 +1,39 @@
+".source.js":
+    "Angular App Module":
+        "prefix": "angapp"
+        "body":"""
+            (function() {
+            'use strict';
+
+            angular.module('${1:app}', [
+                // Angular modules
+                $1
+
+                // Reusable cross app code modules
+                $2
+
+                // 3rd Party modules
+                $3
+            ]);
+
+            })();
+        """
+
+    "Return Next":
+        "prefix": "next"
+        "body": """
+            .then(() => next())
+        """
+
+    "Return Err":
+        "prefix": "catch"
+        "body": """
+            .catch(err => next(err));
+        """
+
+    "End Promise Chain":
+        "prefix": "end"
+        "body": """
+            .then(() => next())
+            .catch(err => next(err));
+        """
